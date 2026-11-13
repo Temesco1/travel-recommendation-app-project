@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Travel | Discover Your Next Adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">Wanderlust<span>Travel</span></a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+
+            <div class="search-box">
+                <input type="text" id="searchInput"
+                    placeholder="Search beaches, temples, countries...">
+                <button id="searchBtn">Search</button>
+                <button id="clearBtn">Clear</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Explore The World With Us</h1>
+                <p>
+                    Discover beautiful beaches, historic temples and
+                    amazing countries. Your next adventure starts here.
+                </p>
+                <a href="#recommendations" class="hero-btn">
+                    Explore Destinations
+                </a>
+            </div>
+        </section>
+
+        <!-- Search Results -->
+        <section id="recommendations" class="recommendations">
+            <h2>Travel Recommendations</h2>
+            <p class="section-intro">
+                Find inspiring destinations for your next journey.
+            </p>
+
+            <div id="results" class="results-grid">
+                <p>Search for a beach, temple or country to see recommendations.</p>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about">
+            <h2>About Wanderlust Travel</h2>
+
+            <p>
+                Wanderlust Travel is a travel recommendation platform
+                created to help people discover beautiful destinations
+                around the world.
+            </p>
+
+            <p>
+                Our mission is to make travel discovery simple and
+                enjoyable by recommending beaches, temples and
+                countries worth exploring.
+            </p>
+
+            <h3>Our Team</h3>
+            <p>
+                Our team is passionate about tourism, culture,
+                adventure and helping travellers find memorable
+                experiences.
+            </p>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>Have a question? Send us a message.</p>
+
+            <form id="contactForm">
+                <label for="name">Your Name</label>
+                <input type="text" id="name"
+                    placeholder="Enter your name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email"
+                    placeholder="Enter your email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message"
+                    placeholder="Write your message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <p id="formMessage"></p>
+            <p>Email: info@wanderlusttravel.com</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Wanderlust Travel. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
